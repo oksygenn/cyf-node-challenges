@@ -10,7 +10,7 @@ On the route `/` respond with the routes you are planing to implement, example:
 
 ```js
 {
-    "/pharmcies": "retruns an array of pharmacies in a specific area"
+    "/pharmacies": "returns an array of pharmacies in a specific area"
     ...
 }
 ```
