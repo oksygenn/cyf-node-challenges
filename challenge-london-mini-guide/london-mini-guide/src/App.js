@@ -23,7 +23,7 @@ const App = () => {
 
   useEffect(() => {
     if (cityName.length > 0 && categoryName.length > 0) {
-      const url = `http://localhost:3001/${cityName}/${categoryName}`;
+      const url = `https://oksygenn-london-mini-guide.herokuapp.com/${cityName}/${categoryName}`;
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
@@ -117,7 +117,7 @@ const App = () => {
                 <td>{entry.phone}</td>
                 <td>{entry.address}</td>
                 <td>
-                  {entry.website != undefined ? (
+                  {entry.website != null ? (
                     <a href={entry.website}>{entry.name}</a>
                   ) : (
                     "N/A"
